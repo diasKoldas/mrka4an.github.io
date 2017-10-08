@@ -1,17 +1,67 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>Ka4an</title>
-    <meta name="viewport" content="width=device-width">
-    <meta name="theme-color" content="#4b5a65">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/main.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <script src="js/scripts.min.js"></script>
-  </head>
-  <body>
-    <h1>Alisher <span>MEL<b>'</b>DEBEK</span></h1> <br>
-    <h2>Front-End Developer</h2>    
-  </body>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ka4an PRODUCTION</title>
+	<link rel="stylesheet" href="https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/css/demo.css">
+	<style>
+		*{
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			
+		}
+		/* Header */
+		body {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		.large-header {
+			position: relative;
+			width: 100%;
+			/*height: 1000px;*/
+			background: #333;
+			overflow: hidden;
+			background-size: cover;
+			background-position: center center;
+			z-index: 1;
+		}
+		.main-title {
+			position: absolute;
+			margin: 0;
+			padding: 0;
+			color: #f9f1e9;
+			text-align: center;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate3d(-50%, -50%, 0);
+			transform: translate3d(-50%, -50%, 0);
+		}
+		.demo-1 .main-title {
+			text-transform: uppercase;
+			font-size: 4.2em;
+			letter-spacing: 0.1em;
+		}
+		.main-title .thin {
+			font-weight: 200;
+		}
+		@media only screen and (max-width: 768px) {
+			.demo-1 .main-title {
+				font-size: 3em;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div id="large-header" class="large-header">
+		<canvas id="demo-canvas"></canvas>
+		<h1 class="main-title">Ka4an <span class="thin"> PRODUCTION</span></h1>
+	</div>
+	<script src="js.js"></script>
+</body>
 </html>
