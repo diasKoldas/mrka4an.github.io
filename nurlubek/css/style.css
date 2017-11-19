@@ -7,6 +7,9 @@ body {
 .container:not(:first-child) {
   background-color: #eee;
 }
+.carousel-inner {
+  height: 400px;
+}
 #footer {
   background-color: transparent;
 }
