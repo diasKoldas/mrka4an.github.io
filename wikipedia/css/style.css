@@ -4,12 +4,11 @@
 	-ms-box-sizing: border-box;
 	box-sizing: border-box;
 }
-header {
+header , footer{
 	display: block;
 	height: 200px;
 	width: 100%;
-	background-color: #396;
-	opacity: .5;
+	background-color: rgba(51, 153, 102, .5) ;
 }
 header .hero {
 	color: #fff;
@@ -28,4 +27,13 @@ header .hero {
 }
 .main .text {
 	font-size: 1.2em;
+}
+footer {
+	height: 100px;
+	margin-top: 20px;
+}
+footer h3 {
+	text-align: center;
+	font-size: 20px;
+	color: #000;
 }
