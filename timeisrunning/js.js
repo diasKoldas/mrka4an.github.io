@@ -1,4 +1,4 @@
-var deadline = new Date(`2018/03/20`);// Милисекунды до этой даты
+var deadline = new Date(`2018/02/18`);// Милисекунды до этой даты
 function updateClock(){
   var today = new Date();
   var diff = Date.parse(deadline) - Date.parse(today);
