@@ -1,4 +1,4 @@
-var deadline = new Date(`2018/02/01`);// Милисекунды до этой даты
+var deadline = new Date(`2018/02/18`);// Милисекунды до этой даты
 function updateClock(){
   var today = new Date();
   var diff = Date.parse(deadline) - Date.parse(today);
@@ -22,7 +22,7 @@ function updateClock(){
   	secondsEl = document.querySelector("#seconds").innerHTML = ('0'+seconds).slice(-2);
   }
 }
-// var interval = setInterval(updateClock,1000);
+var interval = setInterval(updateClock,1000);
 
 
 
