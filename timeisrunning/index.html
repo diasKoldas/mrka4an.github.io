@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Timer</title>
-	<link rel="stylesheet" href="vendor/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<style>
+			body{
+font-family:'Roboto Slab',serif;}
+.heading{text-align:center;font-size:80px;}
+#clock{display:block;width:500px;margin-left:auto;margin-right:auto;margin-top:20px;padding:20px;text-align:center;background-color:white;box-shadow:2px 2px 5px 1px gray;}
+.block{display:inline-block;width:16%;margin:1px;padding:5px;font-size:20px;text-align:center;background-color:orange;}
+.digit{display:block;font-size:50px;background-color:#fff;overflow:hidden;}
 
-	<div id="clockdiv">
-		<div>
-			<span class="days"></span>
-			<div class="smalltext">Days</div>
+		</style>
+	</head>
+	<body>
+		<h1 class="heading">My Next Birthday In:</h1>
+		<div id="clock">
+			<div class="block">
+				<span class="digit" id="months"></span>
+				<!-- Months -->
+			</div>
+			
+			<div class="block">
+				<span class="digit" id="days"></span>
+				<!-- Days -->
+			</div>
+			
+			<div class="block">
+				<span class="digit" id="hours"></span>
+				<!-- Hours -->
+			</div>
+			
+			<div class="block">
+				<span class="digit" id="minutes"></span>
+				<!-- Minutes -->
+			</div>
+			
+			<div class="block">
+				<span class="digit" id="seconds"></span>
+				Seconds
+			</div>
 		</div>
-		<div>
-			<span class="hours"></span>
-			<div class="smalltext">Hours</div>
-		</div>
-		<div>
-			<span class="minutes"></span>
-			<div class="smalltext">Minutes</div>
-		</div>
-		<div>
-			<span class="seconds"></span>
-			<div class="smalltext">Seconds</div>
-		</div>
-	</div>
-
-	<div class="targets">
-		<div class="target" >Book: <b>Выразительный JavaScript</b></div>
-		<div class="target" >Book: <b>JavaScript & JQuery - John Dukkett</b></div>
-		<div class="target" >Web BOOK: <b>learn.javascript.ru</b></div>
-		<div class="target" ><b>VueJS</b></div>
-		<div class="target" ><b>ReactJS+Redux</b></div>
-	</div>
-	
-	<script src="vendor/timer.js"></script>
-</body>
+		<!-- <script src="jquery.min.js"></script> -->
+		<script src="js.js"></script>
+	</body>
 </html>
