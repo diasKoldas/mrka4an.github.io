@@ -2,40 +2,16 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
 		<title>Document</title>
-		<style>
-			body{
-font-family:'Roboto Slab',serif;}
-.heading{text-align:center;font-size:80px;}
-#clock{display:block;width:500px;margin-left:auto;margin-right:auto;margin-top:20px;padding:20px;text-align:center;background-color:white;box-shadow:2px 2px 5px 1px gray;}
-.block{display:inline-block;width:16%;margin:1px;padding:5px;font-size:20px;text-align:center;background-color:orange;}
-.digit{display:block;font-size:50px;background-color:#fff;overflow:hidden;}
-
-		</style>
+		<link rel="stylesheet" href="css.css">
 	</head>
 	<body>
-		<h1 class="heading">My Next Birthday In:</h1>
 		<div id="clock">
-			<div class="block">
-				<span class="digit" id="months"></span>
-				Months
-			</div>
-			
-			<div class="block">
+			<div class="block days">
 				<span class="digit" id="days"></span>
 				Days
 			</div>
-			
-			<div class="block">
-				<span class="digit" id="hours"></span>
-				Hours
-			</div>
-			
-			<div class="block">
-				<span class="digit" id="minutes"></span>
-				Minutes
-			</div>
-			
 			<div class="block">
 				<span class="digit" id="seconds"></span>
 				Seconds
