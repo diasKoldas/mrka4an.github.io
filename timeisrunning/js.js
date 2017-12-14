@@ -1,4 +1,4 @@
-var deadline = new Date(`2018/07/19`);
+var deadline = new Date(`2018/06/19`);
 function updateClock(){
   var today = new Date();
   var diff = Date.parse(deadline) - Date.parse(today);
