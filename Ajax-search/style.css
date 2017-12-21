@@ -1,0 +1,52 @@
+    html {
+      box-sizing: border-box;
+      background:#444;
+      font-family:'helvetica neue';
+      font-size: 20px;
+      font-weight: 200;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    input {
+      width: 100%;
+      padding:20px;
+    }
+
+    .search-form {
+      max-width:400px;
+      margin:50px auto;
+    }
+
+    input.search {
+      margin: 0;
+      text-align: center;
+      outline:0;
+      width: 120%;
+      left: -10%;
+      position: relative;
+      top: 10px;
+      z-index: 2;
+      font-size: 40px;
+    }
+
+
+    .suggestions {
+      margin: 0;
+      padding: 0;
+      position: relative;
+    }
+
+    .suggestions li {
+      background:white;
+      list-style: none;
+      margin:3px 0;
+      padding:20px;
+      display:flex;
+      justify-content:space-between;
+      text-transform: capitalize;
+    }
+    .hl {
+      background:#333;
+      color: #fff;
+    }
